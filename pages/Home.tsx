@@ -247,23 +247,23 @@ export const Home: React.FC = () => {
 
             {/* Feature 3 */}
             <div className="p-8 rounded-2xl bg-gray-950/50 border border-gray-800 hover:border-brand-500/40 transition-all group">
-              <div className="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center mb-6 text-blue-400 group-hover:bg-blue-500/20">
-                <Layers size={24} />
+              <div className="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center mb-6 text-purple-400 group-hover:bg-purple-500/20">
+                <ShieldCheck size={24} />
               </div>
-              <h3 className="text-white font-bold text-xl mb-3">Powerful Build & Debug</h3>
+              <h3 className="text-white font-bold text-xl mb-3">Native RTOS Support</h3>
               <p className="text-gray-400 leading-relaxed">
-                Get precise control over hardware with safe abstractions. Our naming conventions are explicit and easy to learn, allowing you to focus on high-level logic while we handle the low-level register nuances.
+                Multi-Tasking on the Darklight is seamless with deep, native integration for both FreeRTOS and SEGGER embOS, enabling truly deterministic and scalable multi-tasking applications.
               </p>
             </div>
 
             {/* Feature 4 */}
             <div className="p-8 rounded-2xl bg-gray-950/50 border border-gray-800 hover:border-brand-500/40 transition-all group">
-              <div className="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center mb-6 text-purple-400 group-hover:bg-purple-500/20">
-                <Terminal size={24} />
+              <div className="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center mb-6 text-blue-400 group-hover:bg-blue-500/20">
+                <Layers size={24} />
               </div>
-              <h3 className="text-white font-bold text-xl mb-3">Unrestricted Coding</h3>
+              <h3 className="text-white font-bold text-xl mb-3">Powerful Build & Debug Env.</h3>
               <p className="text-gray-400 leading-relaxed">
-                No monolithic setup loops or fragile code-generation boundaries. Mix high-level abstractions with direct register access whenever precision is required, maintaining total ownership of your source structure.
+                Get precise control over hardware with safe abstractions. Our naming conventions are explicit and easy to learn, allowing you to focus on high-level logic while we handle the low-level register nuances.
               </p>
             </div>
 
@@ -278,35 +278,19 @@ export const Home: React.FC = () => {
               </p>
             </div>
 
-            {/* Feature 4 */}
+            {/* Feature 6 */}
             <div className="p-8 rounded-2xl bg-gray-950/50 border border-gray-800 hover:border-brand-500/40 transition-all group">
-              <div className="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center mb-6 text-purple-400 group-hover:bg-purple-500/20">
-                <ShieldCheck size={24} />
+              <div className="w-12 h-12 rounded-lg bg-brand-500/10 flex items-center justify-center mb-6 text-brand-400 group-hover:bg-brand-500/20">
+                <Terminal size={24} /> 
               </div>
-              <h3 className="text-white font-bold text-xl mb-3">Native RTOS Support</h3>
+              <h3 className="text-white font-bold text-xl mb-3">Prototype to Production</h3>
               <p className="text-gray-400 leading-relaxed">
                 Transition smoothly from experimental breadboards to production-ready systems using the same libraries, boards, and debuggers. Using professional-grade tooling from day one ensures your code is reliable and ready for industrial rigors.
               </p>
             </div>
-
-            {/* Feature 6 - Highlighted summary card */}
-            <div className="md:col-span-2 p-8 rounded-2xl bg-gradient-to-r from-brand-900/20 to-gray-950 border border-brand-500/20 group">
-              <div className="flex flex-col md:flex-row items-center gap-8">
-                 <div className="w-16 h-16 rounded-full bg-brand-500/10 flex items-center justify-center text-brand-400 shrink-0">
-                   <ShieldCheck size={32} />
-                 </div>
-                 <div>
-                    <h3 className="text-white font-bold text-2xl mb-2">Prototype to Production</h3>
-                    <p className="text-gray-400 leading-relaxed">
-                      Transition smoothly from experimental breadboards to production-ready systems using the same libraries, boards, and debuggers. Using professional-grade tooling from day one ensures your code is reliable and ready for industrial rigors.
-                    </p>
-                 </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
-
       
 
       {/* Ecosystem Expansion */}
@@ -367,6 +351,55 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
+
+            {/* Built With DarkLight (Community Showcase) */}
+      <section className="py-24 container mx-auto px-4">
+        <div className="flex justify-between items-end mb-12">
+           <div>
+             <h2 className="text-3xl font-bold text-white mb-2">Built With DarkLight</h2>
+             <p className="text-gray-400">See what our community is building.</p>
+           </div>
+           <Link to="/community" className="hidden md:flex text-brand-400 hover:text-white items-center gap-2 text-sm font-semibold">
+              View All Projects <ArrowRight size={16} />
+           </Link>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="group relative rounded-xl overflow-hidden aspect-video bg-gray-800 cursor-pointer">
+             <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800" alt="Robot" className="object-cover w-full h-full opacity-60 group-hover:opacity-40 transition-opacity" />
+             <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent p-6 flex flex-col justify-end">
+                <div className="flex items-center gap-2 mb-2">
+                   <Box size={14} className="text-brand-400" />
+                   <span className="text-xs font-bold text-brand-400 uppercase tracking-wider">Robotics</span>
+                </div>
+                <h3 className="text-xl font-bold text-white">Hexapod Walker</h3>
+             </div>
+          </div>
+          
+          <div className="group relative rounded-xl overflow-hidden aspect-video bg-gray-800 cursor-pointer">
+             <img src="https://69415646eaa0bc88a50c8649.imgix.net/WhatsApp%20Image%202025-12-16%20at%2013.09.50.jpeg?auto=format&fit=crop&q=80&w=800" alt="Dashboard" className="object-cover w-full h-full opacity-60 group-hover:opacity-40 transition-opacity" />
+             <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent p-6 flex flex-col justify-end">
+                <div className="flex items-center gap-2 mb-2">
+                   <Gauge size={14} className="text-purple-400" />
+                   <span className="text-xs font-bold text-purple-400 uppercase tracking-wider">Industrial</span>
+                </div>
+                <h3 className="text-xl font-bold text-white">CAN Bus Logger</h3>
+             </div>
+          </div>
+          
+          <div className="group relative rounded-xl overflow-hidden aspect-video bg-gray-800 cursor-pointer">
+             <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=800" alt="Home Automation" className="object-cover w-full h-full opacity-60 group-hover:opacity-40 transition-opacity" />
+             <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent p-6 flex flex-col justify-end">
+                <div className="flex items-center gap-2 mb-2">
+                   <Wifi size={14} className="text-blue-400" />
+                   <span className="text-xs font-bold text-blue-400 uppercase tracking-wider">IoT</span>
+                </div>
+                <h3 className="text-xl font-bold text-white">Smart Plant Monitor</h3>
+             </div>
+          </div>
+        </div>
+      </section>
+
       {/* Engineering Testimonials Section */}
       <section className="py-24 bg-black border-y border-gray-900">
         <div className="container mx-auto px-4">
@@ -421,55 +454,7 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-     
 
-      {/* Built With DarkLight (Community Showcase) */}
-      <section className="py-24 container mx-auto px-4">
-        <div className="flex justify-between items-end mb-12">
-           <div>
-             <h2 className="text-3xl font-bold text-white mb-2">Built With DarkLight</h2>
-             <p className="text-gray-400">See what our community is building.</p>
-           </div>
-           <Link to="/community" className="hidden md:flex text-brand-400 hover:text-white items-center gap-2 text-sm font-semibold">
-              View All Projects <ArrowRight size={16} />
-           </Link>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="group relative rounded-xl overflow-hidden aspect-video bg-gray-800 cursor-pointer">
-             <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800" alt="Robot" className="object-cover w-full h-full opacity-60 group-hover:opacity-40 transition-opacity" />
-             <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent p-6 flex flex-col justify-end">
-                <div className="flex items-center gap-2 mb-2">
-                   <Box size={14} className="text-brand-400" />
-                   <span className="text-xs font-bold text-brand-400 uppercase tracking-wider">Robotics</span>
-                </div>
-                <h3 className="text-xl font-bold text-white">Hexapod Walker</h3>
-             </div>
-          </div>
-          
-          <div className="group relative rounded-xl overflow-hidden aspect-video bg-gray-800 cursor-pointer">
-             <img src="https://69415646eaa0bc88a50c8649.imgix.net/WhatsApp%20Image%202025-12-16%20at%2013.09.50.jpeg?auto=format&fit=crop&q=80&w=800" alt="Dashboard" className="object-cover w-full h-full opacity-60 group-hover:opacity-40 transition-opacity" />
-             <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent p-6 flex flex-col justify-end">
-                <div className="flex items-center gap-2 mb-2">
-                   <Gauge size={14} className="text-purple-400" />
-                   <span className="text-xs font-bold text-purple-400 uppercase tracking-wider">Industrial</span>
-                </div>
-                <h3 className="text-xl font-bold text-white">CAN Bus Logger</h3>
-             </div>
-          </div>
-          
-          <div className="group relative rounded-xl overflow-hidden aspect-video bg-gray-800 cursor-pointer">
-             <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=800" alt="Home Automation" className="object-cover w-full h-full opacity-60 group-hover:opacity-40 transition-opacity" />
-             <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent p-6 flex flex-col justify-end">
-                <div className="flex items-center gap-2 mb-2">
-                   <Wifi size={14} className="text-blue-400" />
-                   <span className="text-xs font-bold text-blue-400 uppercase tracking-wider">IoT</span>
-                </div>
-                <h3 className="text-xl font-bold text-white">Smart Plant Monitor</h3>
-             </div>
-          </div>
-        </div>
-      </section>
 
       {/* Newsletter / CTA Section */}
       <section className="py-24 bg-gradient-to-br from-brand-900/20 to-gray-900 border-t border-gray-800 relative overflow-hidden">
