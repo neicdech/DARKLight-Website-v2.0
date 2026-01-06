@@ -67,13 +67,13 @@ export const Home: React.FC = () => {
             </div>
             <div className="p-2 md:p-8 bg-gray-900 flex items-center justify-center min-h-[400px]">
               <img 
-                src="https://images.unsplash.com/photo-1555664424-778a69022365?auto=format&fit=crop&q=100&w=1600" 
+                src="https://69415646eaa0bc88a50c8649.imgix.net/DarkLight_Front_Black_Background.jpg?auto=format&fit=crop&q=100&w=1600" 
                 alt="Detailed Hardware Schematic" 
                 className="max-w-full h-auto rounded shadow-lg border border-gray-800"
               />
             </div>
             <div className="p-4 bg-gray-950 border-t border-gray-800 text-center">
-              <p className="text-sm text-gray-400">High Resolution Reference Diagram - 3.3V Logic Levels Required</p>
+              <p className="text-sm text-gray-400">Uhuru Development - 3.3V Logic Levels Required</p>
             </div>
           </div>
         </div>
@@ -232,7 +232,7 @@ export const Home: React.FC = () => {
               <div className="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center mb-6 text-blue-400 group-hover:bg-blue-500/20">
                 <Layers size={24} />
               </div>
-              <h3 className="text-white font-bold text-xl mb-3">Powerful & Transparent APIs</h3>
+              <h3 className="text-white font-bold text-xl mb-3">Powerful Build & Debug</h3>
               <p className="text-gray-400 leading-relaxed">
                 Get precise control over hardware with safe abstractions. Our naming conventions are explicit and easy to learn, allowing you to focus on high-level logic while we handle the low-level register nuances.
               </p>
@@ -287,7 +287,7 @@ export const Home: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="group bg-gray-950 border border-gray-800 rounded-xl overflow-hidden hover:border-brand-500/50 transition-all">
                <div className="h-32 bg-gray-800 relative overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1563770095-39d468f95c83?auto=format&fit=crop&q=80&w=400" alt="WiFi Shield" className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform" />
+                  <img src="https://69415646eaa0bc88a50c8649.imgix.net/24078-J-Link-Mini-Feature.webp?auto=format&fit=crop&q=80&w=400" alt="WiFi Shield" className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform" />
                   <div className="absolute top-2 right-2 bg-brand-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">NEW</div>
                </div>
                <div className="p-4">
@@ -298,11 +298,11 @@ export const Home: React.FC = () => {
 
             <div className="group bg-gray-950 border border-gray-800 rounded-xl overflow-hidden hover:border-brand-500/50 transition-all">
                <div className="h-32 bg-gray-800 relative overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1555664424-778a69022365?auto=format&fit=crop&q=80&w=400" alt="Motor Shield" className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform" />
+                  <img src="https://69415646eaa0bc88a50c8649.imgix.net/ST-Link-V2_2.webp?auto=format&fit=crop&q=80&w=400" alt="Motor Shield" className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform" />
                </div>
                <div className="p-4">
-                  <h4 className="text-white font-bold mb-1">Drive Shield</h4>
-                  <p className="text-xs text-gray-500">4-Channel Stepper/DC</p>
+                  <h4 className="text-white font-bold mb-1">Debug Shield</h4>
+                  <p className="text-xs text-gray-500">ST-Lin k V2.2</p>
                </div>
             </div>
 

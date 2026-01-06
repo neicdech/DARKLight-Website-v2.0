@@ -3,27 +3,27 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const CAROUSEL_IMAGES = [
   {
-    url: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&q=80&w=1200",
-    title: "Vivid Purple PCB",
+    url: "https://69415646eaa0bc88a50c8649.imgix.net/DarkLight_Front_Black_Background.jpg?auto=format&fit=crop&q=80&w=1200",
+    title: "Multi Layer PCB",
     desc: "Precision engineering on our signature purple substrate."
   },
   {
-    url: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200",
+    url: "https://69415646eaa0bc88a50c8649.imgix.net/DarkLight_Back.jpg?auto=format&fit=crop&q=80&w=1200",
     title: "Core Processor",
     desc: "120MHz Cortex-M4 delivering deterministic performance."
   },
   {
-    url: "https://images.unsplash.com/photo-1555664424-778a69022365?auto=format&fit=crop&q=80&w=1200",
+    url: "https://69415646eaa0bc88a50c8649.imgix.net/DarkLight_Front_Black_Background.jpg?auto=format&fit=crop&q=80&w=1200",
     title: "Gold-Plated Headers",
     desc: "ENIG finish for maximum connectivity and longevity."
   },
   {
-    url: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200",
+    url: "https://69415646eaa0bc88a50c8649.imgix.net/Screenshot%202026-01-06%20155037.jpg?auto=format&fit=crop&q=80&w=1200",
     title: "Embedded Systems",
     desc: "Built for complex, real-time industrial environments."
   },
   {
-    url: "https://images.unsplash.com/photo-1601057474415-4c0798150394?auto=format&fit=crop&q=80&w=1200",
+    url: "https://69415646eaa0bc88a50c8649.imgix.net/Screenshot%202026-01-06%20155216.jpg?auto=format&fit=crop&q=80&w=1200",
     title: "Modern Connectivity",
     desc: "Native USB-C for high-speed debugging and power."
   }
