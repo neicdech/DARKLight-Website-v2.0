@@ -4,22 +4,22 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const CAROUSEL_IMAGES = [
   {
     url: "https://69415646eaa0bc88a50c8649.imgix.net/DarkLight_Front_Black_Background.jpg?auto=format&fit=crop&q=80&w=1200",
-    title: "Multi Layer PCB",
+    title: "Core Processor",
     desc: "Precision engineering on our signature purple substrate."
   },
   {
     url: "https://69415646eaa0bc88a50c8649.imgix.net/DarkLight_Back.jpg?auto=format&fit=crop&q=80&w=1200",
-    title: "Core Processor",
+    title: "Multi Layer PCB",
     desc: "120MHz Cortex-M4 delivering deterministic performance."
   },
   {
     url: "https://69415646eaa0bc88a50c8649.imgix.net/DarkLight_Front_Black_Background.jpg?auto=format&fit=crop&q=80&w=1200",
-    title: "Gold-Plated Headers",
+    title: "Embedded System",
     desc: "ENIG finish for maximum connectivity and longevity."
   },
   {
     url: "https://69415646eaa0bc88a50c8649.imgix.net/Screenshot%202026-01-06%20155037.jpg?auto=format&fit=crop&q=80&w=1200",
-    title: "Embedded Systems",
+    title: "Gold-Plated Headers",
     desc: "Built for complex, real-time industrial environments."
   },
   {

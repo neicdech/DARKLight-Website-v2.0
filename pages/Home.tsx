@@ -67,7 +67,7 @@ export const Home: React.FC = () => {
             </div>
             <div className="p-2 md:p-8 bg-gray-900 flex items-center justify-center min-h-[400px]">
               <img 
-                src="https://69415646eaa0bc88a50c8649.imgix.net/DarkLight_Front_Black_Background.jpg?auto=format&fit=crop&q=100&w=1600" 
+                src="https://69415646eaa0bc88a50c8649.imgix.net/pcb2.jpeg?auto=format&fit=crop&q=100&w=1600" 
                 alt="Detailed Hardware Schematic" 
                 className="max-w-full h-auto rounded shadow-lg border border-gray-800"
               />
