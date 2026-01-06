@@ -18,7 +18,7 @@ const CAROUSEL_IMAGES = [
     desc: "ENIG finish for maximum connectivity and longevity."
   },
   {
-    url: "https://69415646eaa0bc88a50c8649.imgix.net/Screenshot%202026-01-06%20155037.jpg?auto=format&fit=crop&q=80&w=1200",
+    url: "https://69415646eaa0bc88a50c8649.imgix.net/Screenshot%202026-01-06%20160154.jpg?auto=format&fit=crop&q=80&w=1200",
     title: "Gold-Plated Headers",
     desc: "Built for complex, real-time industrial environments."
   },

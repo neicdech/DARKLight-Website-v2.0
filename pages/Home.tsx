@@ -67,8 +67,8 @@ export const Home: React.FC = () => {
             </div>
             <div className="p-2 md:p-8 bg-gray-900 flex items-center justify-center min-h-[400px]">
               <img 
-                src="https://69415646eaa0bc88a50c8649.imgix.net/pcb2.jpeg?auto=format&fit=crop&q=100&w=1600" 
-                alt="Detailed Hardware Schematic" 
+                src="https://69415646eaa0bc88a50c8649.imgix.net/pcb2.jpeg?auto=format&fit=crop&q=100&w=1200" 
+                alt="Detailed Hardware Pinout" 
                 className="max-w-full h-auto rounded shadow-lg border border-gray-800"
               />
             </div>
@@ -261,7 +261,7 @@ export const Home: React.FC = () => {
               <div className="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center mb-6 text-blue-400 group-hover:bg-blue-500/20">
                 <Layers size={24} />
               </div>
-              <h3 className="text-white font-bold text-xl mb-3">Powerful Build & Debug Env.</h3>
+              <h3 className="text-white font-bold text-xl mb-3">Powerful Build & Debug Environment</h3>
               <p className="text-gray-400 leading-relaxed">
                 Get precise control over hardware with safe abstractions. Our naming conventions are explicit and easy to learn, allowing you to focus on high-level logic while we handle the low-level register nuances.
               </p>
@@ -281,7 +281,7 @@ export const Home: React.FC = () => {
             {/* Feature 6 */}
             <div className="p-8 rounded-2xl bg-gray-950/50 border border-gray-800 hover:border-brand-500/40 transition-all group">
               <div className="w-12 h-12 rounded-lg bg-brand-500/10 flex items-center justify-center mb-6 text-brand-400 group-hover:bg-brand-500/20">
-                <Terminal size={24} /> 
+                <ShieldCheck size={24} /> 
               </div>
               <h3 className="text-white font-bold text-xl mb-3">Prototype to Production</h3>
               <p className="text-gray-400 leading-relaxed">
@@ -291,7 +291,7 @@ export const Home: React.FC = () => {
           </div>
         </div>
       </section>
-      
+
 
       {/* Ecosystem Expansion */}
       <section className="py-24 bg-gray-900">
