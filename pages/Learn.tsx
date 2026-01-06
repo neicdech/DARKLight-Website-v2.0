@@ -36,7 +36,7 @@ export const Learn: React.FC = () => {
                 {DOC_DATA.filter(d => d.category === category).map(doc => (
                   <li key={doc.id}>
                     <a 
-                      href={`#${doc.id}`}
+                      href={`#/learn#${doc.id}`}
                       className={`block pl-4 py-1 text-sm border-l-2 transition-colors ${
                         hash === `#${doc.id}` 
                         ? 'border-brand-500 text-brand-400' 
