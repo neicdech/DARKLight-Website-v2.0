@@ -67,7 +67,7 @@ export const Home: React.FC = () => {
             </div>
             <div className="p-2 md:p-8 bg-gray-900 flex items-center justify-center min-h-[400px]">
               <img 
-                src="https://69415646eaa0bc88a50c8649.imgix.net/pcb2.jpeg?auto=format&fit=crop&q=100&w=1200" 
+                src="https://69415646eaa0bc88a50c8649.imgix.net/pcb2.jpeg?auto=format&fit=crop&q=100&w=100" 
                 alt="Detailed Hardware Pinout" 
                 className="max-w-full h-auto rounded shadow-lg border border-gray-800"
               />
@@ -195,7 +195,7 @@ export const Home: React.FC = () => {
                 </ul>
                 <button 
                   onClick={() => setIsPinoutModalOpen(true)}
-                  className="text-brand-400 hover:text-brand-300 font-semibold flex items-center gap-1 group focus:outline-none"
+                  className="w-full sm:w-auto px-8 py-3 bg-brand-600 hover:bg-brand-500 text-white rounded-lg font-semibold transition-all flex items-center justify-center gap-2"
                 >
                    View Interactive Pinout <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
                 </button>
