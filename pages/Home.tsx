@@ -126,7 +126,6 @@ export const Home: React.FC = () => {
                         </div>
                         <div>
                           <p className="font-bold text-white">48MHz Arm Cortex M0 CPU</p>
-                          <p className="text-xs text-gray-500">Maximum density for space-constrained industrial projects.</p>
                         </div>
                     </li>
                     <li className="flex items-start text-gray-300">
@@ -135,7 +134,6 @@ export const Home: React.FC = () => {
                         </div>
                         <div>
                           <p className="font-bold text-white">256 Kbytes Flash</p>
-                          <p className="text-xs text-gray-500">Fast programming and native serial monitor support.</p>
                         </div>
                     </li>
                     <li className="flex items-start text-gray-300">
@@ -144,7 +142,6 @@ export const Home: React.FC = () => {
                         </div>
                         <div>
                           <p className="font-bold text-white">32 Kbytes SRAM</p>
-                          <p className="text-xs text-gray-500">ENIG finish for reliable electrical contact and corrosion resistance.</p>
                         </div>
                     </li>
                     <li className="flex items-start text-gray-300">
@@ -153,7 +150,6 @@ export const Home: React.FC = () => {
                         </div>
                         <div>
                           <p className="font-bold text-white">48 Multiplexed I/O</p>
-                          <p className="text-xs text-gray-500">Ultra-low noise LDO for precision analog performance.</p>
                         </div>
                     </li>
                     <li className="flex items-start text-gray-300">
@@ -162,7 +158,6 @@ export const Home: React.FC = () => {
                         </div>
                         <div>
                           <p className="font-bold text-white">2 SPI, 2 UART, 2 I2C</p>
-                          <p className="text-xs text-gray-500">2 Independent Watchdog Timers</p>
                         </div>
                     </li>
                     <li className="flex items-start text-gray-300">
@@ -171,7 +166,30 @@ export const Home: React.FC = () => {
                         </div>
                         <div>
                           <p className="font-bold text-white">16 Channel ADC</p>
-                          <p className="text-xs text-gray-500">Advanced PWM Timer</p>
+                        </div>
+                    </li>
+                     <li className="flex items-start text-gray-300">
+                         <div className="w-5 h-5 bg-brand-500/20 border border-brand-500 rounded flex items-center justify-center mr-3 shrink-0 mt-0.5">
+                          <Check size={12} className="text-brand-400" />
+                        </div>
+                        <div>
+                          <p className="font-bold text-white">Advanced PWM Timer</p>
+                        </div>
+                    </li>
+                    <li className="flex items-start text-gray-300">
+                         <div className="w-5 h-5 bg-brand-500/20 border border-brand-500 rounded flex items-center justify-center mr-3 shrink-0 mt-0.5">
+                          <Check size={12} className="text-brand-400" />
+                        </div>
+                        <div>
+                          <p className="font-bold text-white">2 Independent Watchdog Timers</p>
+                        </div>
+                    </li>
+                    <li className="flex items-start text-gray-300">
+                         <div className="w-5 h-5 bg-brand-500/20 border border-brand-500 rounded flex items-center justify-center mr-3 shrink-0 mt-0.5">
+                          <Check size={12} className="text-brand-400" />
+                        </div>
+                        <div>
+                          <p className="font-bold text-white">DMA</p>
                         </div>
                     </li>
                 </ul>
@@ -249,7 +267,29 @@ export const Home: React.FC = () => {
               </p>
             </div>
 
-            {/* Feature 5 - Highlighted summary card */}
+            {/* Feature 5 */}
+            <div className="p-8 rounded-2xl bg-gray-950/50 border border-gray-800 hover:border-brand-500/40 transition-all group">
+              <div className="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center mb-6 text-purple-400 group-hover:bg-purple-500/20">
+                <Terminal size={24} />
+              </div>
+              <h3 className="text-white font-bold text-xl mb-3">Unrestricted Coding</h3>
+              <p className="text-gray-400 leading-relaxed">
+                No monolithic setup loops or fragile code-generation boundaries. Mix high-level abstractions with direct register access whenever precision is required, maintaining total ownership of your source structure.
+              </p>
+            </div>
+
+            {/* Feature 4 */}
+            <div className="p-8 rounded-2xl bg-gray-950/50 border border-gray-800 hover:border-brand-500/40 transition-all group">
+              <div className="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center mb-6 text-purple-400 group-hover:bg-purple-500/20">
+                <ShieldCheck size={24} />
+              </div>
+              <h3 className="text-white font-bold text-xl mb-3">Native RTOS Support</h3>
+              <p className="text-gray-400 leading-relaxed">
+                Transition smoothly from experimental breadboards to production-ready systems using the same libraries, boards, and debuggers. Using professional-grade tooling from day one ensures your code is reliable and ready for industrial rigors.
+              </p>
+            </div>
+
+            {/* Feature 6 - Highlighted summary card */}
             <div className="md:col-span-2 p-8 rounded-2xl bg-gradient-to-r from-brand-900/20 to-gray-950 border border-brand-500/20 group">
               <div className="flex flex-col md:flex-row items-center gap-8">
                  <div className="w-16 h-16 rounded-full bg-brand-500/10 flex items-center justify-center text-brand-400 shrink-0">
@@ -408,7 +448,7 @@ export const Home: React.FC = () => {
           </div>
           
           <div className="group relative rounded-xl overflow-hidden aspect-video bg-gray-800 cursor-pointer">
-             <img src="https://images.unsplash.com/photo-1555664424-778a69022365?auto=format&fit=crop&q=80&w=800" alt="Dashboard" className="object-cover w-full h-full opacity-60 group-hover:opacity-40 transition-opacity" />
+             <img src="https://69415646eaa0bc88a50c8649.imgix.net/WhatsApp%20Image%202025-12-16%20at%2013.09.50.jpeg?auto=format&fit=crop&q=80&w=800" alt="Dashboard" className="object-cover w-full h-full opacity-60 group-hover:opacity-40 transition-opacity" />
              <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent p-6 flex flex-col justify-end">
                 <div className="flex items-center gap-2 mb-2">
                    <Gauge size={14} className="text-purple-400" />
