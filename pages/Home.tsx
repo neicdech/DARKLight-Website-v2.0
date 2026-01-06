@@ -83,7 +83,7 @@ export const Home: React.FC = () => {
       <section className="relative overflow-hidden pt-20 pb-32 lg:pt-32 lg:pb-40">
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="inline-flex items-center rounded-full border border-brand-500/30 bg-brand-500/10 px-3 py-1 text-sm font-medium text-brand-300 mb-6">
-            <span>New: DarkLight Core v2.0 Released</span>
+            <span>New: DarkLight Uhuru v1.0 Released</span>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-8">
             Precision, Speed, Control<br />
@@ -340,7 +340,7 @@ export const Home: React.FC = () => {
               <thead>
                 <tr className="border-b border-gray-700">
                   <th className="p-4 text-left text-gray-500 font-medium">Feature</th>
-                  <th className="p-4 text-left text-brand-400 font-bold text-lg bg-gray-800/50 rounded-t-lg">DarkLight Core v2</th>
+                  <th className="p-4 text-left text-brand-400 font-bold text-lg bg-gray-800/50 rounded-t-lg">DarkLight Uhuru v2</th>
                   <th className="p-4 text-left text-gray-400 font-medium">DarkLight Uhuru. 8-bit</th>
                   <th className="p-4 text-left text-gray-400 font-medium">DarkLight Ultra 32-bit</th>
                 </tr>
