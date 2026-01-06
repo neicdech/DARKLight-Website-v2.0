@@ -191,77 +191,7 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Component Breakdown Section (HD Images) */}
-      <section className="py-24 bg-black relative overflow-hidden">
-        {/* Decorative background glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none">
-            <div className="absolute top-[20%] right-[-10%] w-96 h-96 bg-brand-500/10 rounded-full blur-[100px]"></div>
-            <div className="absolute bottom-[20%] left-[-10%] w-96 h-96 bg-blue-500/10 rounded-full blur-[100px]"></div>
-        </div>
 
-        <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Engineered for Perfection</h2>
-                <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-                    Every square millimeter of the DarkLight Core is optimized for signal integrity, thermal performance, and longevity.
-                </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px]">
-                {/* Main Processor - Large Card */}
-                <div className="lg:col-span-2 group relative rounded-2xl overflow-hidden border border-gray-800 bg-gray-900 shadow-2xl">
-                    <img
-                        src="https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=2070&auto=format&fit=crop"
-                        alt="Core Processor Macro"
-                        className="w-full h-full object-cover object-center opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-8 flex flex-col justify-end">
-                         <h3 className="text-2xl font-bold text-white mb-2">120MHz Cortex-M4 Core</h3>
-                         <p className="text-gray-300">The heart of the beast. Single-cycle DSP instructions, Floating Point Unit (FPU), and 1MB Flash memory.</p>
-                    </div>
-                </div>
-
-                {/* Power Management */}
-                <div className="group relative rounded-2xl overflow-hidden border border-gray-800 bg-gray-900 shadow-2xl">
-                     <img
-                        src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop"
-                        alt="Power Regulation Components"
-                        className="w-full h-full object-cover object-center opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-6 flex flex-col justify-end">
-                         <h3 className="text-xl font-bold text-white mb-2">Ultra-Low Noise LDO</h3>
-                         <p className="text-gray-300 text-sm">Clean 3.3V power delivery with &lt;10mV ripple for precision analog readings.</p>
-                    </div>
-                </div>
-
-                {/* Connectivity */}
-                <div className="group relative rounded-2xl overflow-hidden border border-gray-800 bg-gray-900 shadow-2xl">
-                     <img
-                        src="https://images.unsplash.com/photo-1601057474415-4c0798150394?q=80&w=1974&auto=format&fit=crop"
-                        alt="USB-C Connector"
-                        className="w-full h-full object-cover object-center opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-6 flex flex-col justify-end">
-                         <h3 className="text-xl font-bold text-white mb-2">USB-C Native</h3>
-                         <p className="text-gray-300 text-sm">Reversible connector for programming, debugging, and serial monitoring.</p>
-                    </div>
-                </div>
-
-                {/* GPIO Headers - Large Card (Span 2) */}
-                <div className="lg:col-span-2 group relative rounded-2xl overflow-hidden border border-gray-800 bg-gray-900 shadow-2xl">
-                     <img
-                        src="https://images.unsplash.com/photo-1555664424-778a69022365?q=80&w=2070&auto=format&fit=crop"
-                        alt="Gold Plated Headers"
-                        className="w-full h-full object-cover object-center opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-8 flex flex-col justify-end">
-                         <h3 className="text-2xl font-bold text-white mb-2">Gold-Plated Contacts</h3>
-                         <p className="text-gray-300">ENIG finish ensures corrosion resistance and reliable electrical contact for years of prototyping.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section>
 
       {/* Why DarkLight Philosophy & Specs */}
       <section className="py-24 bg-gray-900 border-b border-gray-800">
@@ -334,93 +264,10 @@ export const Home: React.FC = () => {
               </div>
             </div>
           </div>
-
-          <div className="overflow-x-auto">
-            <table className="w-full max-w-4xl mx-auto border-collapse">
-              <thead>
-                <tr className="border-b border-gray-700">
-                  <th className="p-4 text-left text-gray-500 font-medium">Feature</th>
-                  <th className="p-4 text-left text-brand-400 font-bold text-lg bg-gray-800/50 rounded-t-lg">DarkLight Uhuru v2</th>
-                  <th className="p-4 text-left text-gray-400 font-medium">DarkLight Uhuru. 8-bit</th>
-                  <th className="p-4 text-left text-gray-400 font-medium">DarkLight Ultra 32-bit</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-800">
-                <tr>
-                  <td className="p-4 text-white font-medium">Clock Speed</td>
-                  <td className="p-4 text-brand-300 font-bold bg-gray-800/30">120 MHz</td>
-                  <td className="p-4 text-gray-500">16 MHz</td>
-                  <td className="p-4 text-gray-500">72 MHz</td>
-                </tr>
-                <tr>
-                  <td className="p-4 text-white font-medium">ADC Resolution</td>
-                  <td className="p-4 text-brand-300 font-bold bg-gray-800/30">12-bit (4096 levels)</td>
-                  <td className="p-4 text-gray-500">10-bit</td>
-                  <td className="p-4 text-gray-500">12-bit</td>
-                </tr>
-                <tr>
-                  <td className="p-4 text-white font-medium">Logic Level</td>
-                  <td className="p-4 text-brand-300 font-bold bg-gray-800/30">3.3V (Modern)</td>
-                  <td className="p-4 text-gray-500">5V (Legacy)</td>
-                  <td className="p-4 text-gray-500">3.3V</td>
-                </tr>
-                <tr>
-                  <td className="p-4 text-white font-medium">Digital I/O Pins</td>
-                  <td className="p-4 text-brand-300 font-bold bg-gray-800/30">49</td>
-                  <td className="p-4 text-gray-500">14</td>
-                  <td className="p-4 text-gray-500">30-40</td>
-                </tr>
-                <tr>
-                  <td className="p-4 text-white font-medium">Non-Blocking API</td>
-                  <td className="p-4 text-brand-300 font-bold bg-gray-800/30">
-                    <span className="flex items-center gap-2"><Check size={16} /> Native (Ticker)</span>
-                  </td>
-                  <td className="p-4 text-gray-500"><X size={16} /></td>
-                  <td className="p-4 text-gray-500">RTOS Required</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
         </div>
       </section>
 
-      {/* Feature Grid */}
-      <section className="py-24 bg-gray-950/50">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="p-8 rounded-2xl bg-gray-900 border border-gray-800 hover:border-brand-500/50 transition-colors">
-              <div className="w-12 h-12 bg-brand-900/50 rounded-lg flex items-center justify-center mb-6 text-brand-400">
-                <CpuIcon size={24} />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">Powerful I/O</h3>
-              <p className="text-gray-400">
-                49 Digital Pins, 18 PWM channels, and 16 Analog Inputs. 
-                Complete control over your hardware environment.
-              </p>
-            </div>
-            <div className="p-8 rounded-2xl bg-gray-900 border border-gray-800 hover:border-brand-500/50 transition-colors">
-              <div className="w-12 h-12 bg-blue-900/50 rounded-lg flex items-center justify-center mb-6 text-blue-400">
-                <Zap size={24} />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">Non-Blocking Core</h3>
-              <p className="text-gray-400">
-                Built-in Ticker class for lightweight scheduling. 
-                Run concurrent tasks without freezing your main loop.
-              </p>
-            </div>
-            <div className="p-8 rounded-2xl bg-gray-900 border border-gray-800 hover:border-brand-500/50 transition-colors">
-              <div className="w-12 h-12 bg-purple-900/50 rounded-lg flex items-center justify-center mb-6 text-purple-400">
-                <Layers size={24} />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">Robust Comms</h3>
-              <p className="text-gray-400">
-                High-speed SPI up to 24MHz and dual independent UARTs 
-                supporting up to 6 Mbps baud rates.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Ecosystem Expansion */}
       <section className="py-24 bg-gray-900">
@@ -534,46 +381,7 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Development Workflow */}
-      <section className="py-24 bg-gray-900 border-y border-gray-800">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold text-white mb-4">Seamless Workflow</h2>
-              <p className="text-gray-400">From concept to deployment in minutes.</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8 relative">
-              {/* Connector Line (Desktop) */}
-              <div className="hidden md:block absolute top-12 left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-gray-800 via-brand-900 to-gray-800 z-0"></div>
-
-              {/* Step 1 */}
-              <div className="relative z-10 flex flex-col items-center text-center">
-                  <div className="w-24 h-24 rounded-full bg-gray-950 border-2 border-gray-800 flex items-center justify-center mb-6 shadow-lg group hover:border-brand-500 transition-colors">
-                      <Settings size={32} className="text-gray-400 group-hover:text-brand-400" />
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-2">1. Connect</h3>
-                  <p className="text-sm text-gray-400 max-w-xs">Plug in via USB-C. No proprietary programmers needed. Drivers install automatically.</p>
-              </div>
-
-              {/* Step 2 */}
-              <div className="relative z-10 flex flex-col items-center text-center">
-                  <div className="w-24 h-24 rounded-full bg-gray-950 border-2 border-gray-800 flex items-center justify-center mb-6 shadow-lg group hover:border-brand-500 transition-colors">
-                      <Terminal size={32} className="text-gray-400 group-hover:text-brand-400" />
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-2">2. Develop</h3>
-                  <p className="text-sm text-gray-400 max-w-xs">Write code in VS Code or CLion using our robust C++ SDK with intelligent autocomplete.</p>
-              </div>
-
-              {/* Step 3 */}
-              <div className="relative z-10 flex flex-col items-center text-center">
-                   <div className="w-24 h-24 rounded-full bg-gray-950 border-2 border-gray-800 flex items-center justify-center mb-6 shadow-lg group hover:border-brand-500 transition-colors">
-                      <Play size={32} className="text-gray-400 group-hover:text-brand-400" />
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-2">3. Deploy</h3>
-                  <p className="text-sm text-gray-400 max-w-xs">Drag and drop the compiled .bin file onto the virtual drive, or flash directly via CLI.</p>
-              </div>
-          </div>
-        </div>
-      </section>
+     
 
       {/* Built With DarkLight (Community Showcase) */}
       <section className="py-24 container mx-auto px-4">
