@@ -195,9 +195,9 @@ export const Home: React.FC = () => {
                 </ul>
                 <button 
                   onClick={() => setIsPinoutModalOpen(true)}
-                  className="w-full sm:w-auto px-8 py-3 bg-brand-600 hover:bg-brand-500 text-white rounded-lg font-semibold transition-all flex items-center justify-center gap-2"
+                  className="w-full sm:w-auto px-8 py-3 bg-brand-600 hover:bg-brand-500 text-white rounded-lg font-semibold transition-all flex items-center justify-center gap-2 group"
                 >
-                   View Interactive Pinout <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+                   View Interactive Pinout <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
                 </button>
              </div>
              
