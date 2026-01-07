@@ -93,7 +93,7 @@ export const Home: React.FC = () => {
           </h1>
           <p className="mt-6 text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10">
             The ultimate platform to LEARN, BUILD and DEPLOY fast & deterministic 
-            real-time embedded systems applications for the most 
+            real-time embedded system applications for the most 
             challenging environment.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -115,7 +115,7 @@ export const Home: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
              <div className="lg:w-1/2">
-                <h2 className="text-3xl font-bold text-white mb-4">Hardware Excellence</h2>
+                <h2 className="text-3xl font-bold text-white mb-4">Our Dev. Boards</h2>
                 <p className="text-gray-400 mb-6 text-lg leading-relaxed">
                   Uhuru is the entry board in the DarkLight's development board line-up, the DarkLight Core features isn't just powerful—it's built to last. Experience the next level of embedded hardware.
                 </p>
