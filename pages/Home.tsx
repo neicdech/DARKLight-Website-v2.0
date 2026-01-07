@@ -269,7 +269,7 @@ export const Home: React.FC = () => {
 
             {/* Feature 5 */}
             <div className="p-8 rounded-2xl bg-gray-950/50 border border-gray-800 hover:border-brand-500/40 transition-all group">
-              <div className="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center mb-6 text-purple-400 group-hover:bg-purple-500/20">
+              <div className="w-12 h-12 rounded-lg bg-red-500/10 flex items-center justify-center mb-6 text-red-400 group-hover:bg-red-500/20">
                 <Terminal size={24} />
               </div>
               <h3 className="text-white font-bold text-xl mb-3">Unrestricted Coding</h3>
