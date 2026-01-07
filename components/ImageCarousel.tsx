@@ -57,7 +57,7 @@ export const ImageCarousel: React.FC = () => {
       {CAROUSEL_IMAGES.map((image, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
+          className={`absolute inset-2 md:inset-4 rounded-xl overflow-hidden transition-all duration-1000 ease-in-out ${
             index === currentIndex ? 'opacity-100 scale-100' : 'opacity-0 scale-105 pointer-events-none'
           }`}
         >

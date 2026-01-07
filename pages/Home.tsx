@@ -86,7 +86,7 @@ export const Home: React.FC = () => {
             <span>New: DarkLight Uhuru v1.0 Released</span>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-8">
-            Precision Speed Control<br />
+            Precision  Speed  Control<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-blue-500">
               Redefined.
             </span>
