@@ -67,7 +67,7 @@ export const Home: React.FC = () => {
             </div>
             <div className="p-2 md:p-8 bg-gray-900 flex items-center justify-center min-h-[400px]">
               <img 
-                src="https://69415646eaa0bc88a50c8649.imgix.net/pcb2.jpeg?auto=format&fit=crop&q=100&w=100" 
+                src="https://69415646eaa0bc88a50c8649.imgix.net/pcb2.jpeg?auto=format&fit=crop&q=100&w=1200" 
                 alt="Detailed Hardware Pinout" 
                 className="max-w-full h-auto rounded shadow-lg border border-gray-800"
               />
@@ -352,53 +352,7 @@ export const Home: React.FC = () => {
       </section>
 
 
-            {/* Built With DarkLight (Community Showcase) */}
-      <section className="py-24 container mx-auto px-4">
-        <div className="flex justify-between items-end mb-12">
-           <div>
-             <h2 className="text-3xl font-bold text-white mb-2">Built With DarkLight</h2>
-             <p className="text-gray-400">See what our community is building.</p>
-           </div>
-           <Link to="/community" className="hidden md:flex text-brand-400 hover:text-white items-center gap-2 text-sm font-semibold">
-              View All Projects <ArrowRight size={16} />
-           </Link>
-        </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="group relative rounded-xl overflow-hidden aspect-video bg-gray-800 cursor-pointer">
-             <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800" alt="Robot" className="object-cover w-full h-full opacity-60 group-hover:opacity-40 transition-opacity" />
-             <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent p-6 flex flex-col justify-end">
-                <div className="flex items-center gap-2 mb-2">
-                   <Box size={14} className="text-brand-400" />
-                   <span className="text-xs font-bold text-brand-400 uppercase tracking-wider">Robotics</span>
-                </div>
-                <h3 className="text-xl font-bold text-white">Hexapod Walker</h3>
-             </div>
-          </div>
-          
-          <div className="group relative rounded-xl overflow-hidden aspect-video bg-gray-800 cursor-pointer">
-             <img src="https://69415646eaa0bc88a50c8649.imgix.net/WhatsApp%20Image%202025-12-16%20at%2013.09.50.jpeg?auto=format&fit=crop&q=80&w=800" alt="Dashboard" className="object-cover w-full h-full opacity-60 group-hover:opacity-40 transition-opacity" />
-             <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent p-6 flex flex-col justify-end">
-                <div className="flex items-center gap-2 mb-2">
-                   <Gauge size={14} className="text-purple-400" />
-                   <span className="text-xs font-bold text-purple-400 uppercase tracking-wider">Industrial</span>
-                </div>
-                <h3 className="text-xl font-bold text-white">CAN Bus Logger</h3>
-             </div>
-          </div>
-          
-          <div className="group relative rounded-xl overflow-hidden aspect-video bg-gray-800 cursor-pointer">
-             <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=800" alt="Home Automation" className="object-cover w-full h-full opacity-60 group-hover:opacity-40 transition-opacity" />
-             <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent p-6 flex flex-col justify-end">
-                <div className="flex items-center gap-2 mb-2">
-                   <Wifi size={14} className="text-blue-400" />
-                   <span className="text-xs font-bold text-blue-400 uppercase tracking-wider">IoT</span>
-                </div>
-                <h3 className="text-xl font-bold text-white">Smart Plant Monitor</h3>
-             </div>
-          </div>
-        </div>
-      </section>
 
       {/* Engineering Testimonials Section */}
       <section className="py-24 bg-black border-y border-gray-900">
@@ -454,7 +408,53 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
+            {/* Built With DarkLight (Community Showcase) */}
+      <section className="py-24 container mx-auto px-4">
+        <div className="flex justify-between items-end mb-12">
+           <div>
+             <h2 className="text-3xl font-bold text-white mb-2">Built With DarkLight</h2>
+             <p className="text-gray-400">See what our community is building.</p>
+           </div>
+           <Link to="/community" className="hidden md:flex text-brand-400 hover:text-white items-center gap-2 text-sm font-semibold">
+              View All Projects <ArrowRight size={16} />
+           </Link>
+        </div>
 
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="group relative rounded-xl overflow-hidden aspect-video bg-gray-800 cursor-pointer">
+             <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800" alt="Robot" className="object-cover w-full h-full opacity-60 group-hover:opacity-40 transition-opacity" />
+             <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent p-6 flex flex-col justify-end">
+                <div className="flex items-center gap-2 mb-2">
+                   <Box size={14} className="text-brand-400" />
+                   <span className="text-xs font-bold text-brand-400 uppercase tracking-wider">Robotics</span>
+                </div>
+                <h3 className="text-xl font-bold text-white">Hexapod Walker</h3>
+             </div>
+          </div>
+          
+          <div className="group relative rounded-xl overflow-hidden aspect-video bg-gray-800 cursor-pointer">
+             <img src="https://69415646eaa0bc88a50c8649.imgix.net/WhatsApp%20Image%202025-12-16%20at%2013.09.50.jpeg?auto=format&fit=crop&q=80&w=800" alt="Dashboard" className="object-cover w-full h-full opacity-60 group-hover:opacity-40 transition-opacity" />
+             <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent p-6 flex flex-col justify-end">
+                <div className="flex items-center gap-2 mb-2">
+                   <Gauge size={14} className="text-purple-400" />
+                   <span className="text-xs font-bold text-purple-400 uppercase tracking-wider">Industrial</span>
+                </div>
+                <h3 className="text-xl font-bold text-white">CAN Bus Logger</h3>
+             </div>
+          </div>
+          
+          <div className="group relative rounded-xl overflow-hidden aspect-video bg-gray-800 cursor-pointer">
+             <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=800" alt="Home Automation" className="object-cover w-full h-full opacity-60 group-hover:opacity-40 transition-opacity" />
+             <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent p-6 flex flex-col justify-end">
+                <div className="flex items-center gap-2 mb-2">
+                   <Wifi size={14} className="text-blue-400" />
+                   <span className="text-xs font-bold text-blue-400 uppercase tracking-wider">IoT</span>
+                </div>
+                <h3 className="text-xl font-bold text-white">Smart Plant Monitor</h3>
+             </div>
+          </div>
+        </div>
+      </section>
 
       {/* Newsletter / CTA Section */}
       <section className="py-24 bg-gradient-to-br from-brand-900/20 to-gray-900 border-t border-gray-800 relative overflow-hidden">
