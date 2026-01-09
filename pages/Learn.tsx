@@ -61,6 +61,30 @@ export const Learn: React.FC = () => {
             Complete technical reference and tutorials for the DarkLight microcontroller ecosystem.
           </p>
 
+          <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+            Complete technical reference and tutorials for the DarkLight microcontroller ecosystem.
+          </p>
+
+          <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+            Complete technical reference and tutorials for the DarkLight microcontroller ecosystem.
+          </p>
+
+          <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+            Complete technical reference and tutorials for the DarkLight microcontroller ecosystem.
+          </p>
+
+          <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+            Complete technical reference and tutorials for the DarkLight microcontroller ecosystem.
+          </p>
+
+          <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+            Complete technical reference and tutorials for the DarkLight microcontroller ecosystem.
+          </p>
+
+          <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+            Complete technical reference and tutorials for the DarkLight microcontroller ecosystem.
+          </p>
+
           <div className="space-y-20">
             {DOC_DATA.map((doc) => (
               <section key={doc.id} id={doc.id} className="scroll-mt-24">
