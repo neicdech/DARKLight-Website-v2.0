@@ -221,7 +221,84 @@ export const Learn: React.FC = () => {
          You can also watch the video lecture on the tuitorial on Digital Output by clicking on this link 
           https://drive.google.com/file/d/1mzOJ9fyoM0UbUY4gzhd7-JL7tS_J9gaJ/view?usp=drive_link
         </p>
-   
+          
+          <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+            Digital Inputs on the DarkLight Microcontroller
+            Introduction
+            In the previous lesson, we explored digital outputs and how a microcontroller can actively drive a pin HIGH or LOW to control external hardware such as LEDs. 
+            In this tutorial, we shift focus to the complementary concept: digital inputs.
+            Digital inputs allow the microcontroller to observe the external world. Through digital input pins, the DarkLight board can detect user actions, sensor outputs, 
+            and logic-level signals from other electronic systems. Common examples include push buttons, limit switches, PIR motion sensors, and logic outputs from other devices.
+            This tutorial explains the electrical principles behind digital inputs, introduces the DigitalIn class, and walks through a complete hardware and software example using a push-button switch.
+          </p>
+
+            <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+              What Is a Digital Input?
+              A digital input pin reads one of two valid voltage levels:
+              Logic 0 (LOW) → approximately 0 V
+              Logic 1 (HIGH) → approximately 3.3 V
+              
+              Because the DarkLight microcontroller operates at 3.3 V, these voltages map directly to Boolean logic:
+              0 V → OFF, LOW, CLEAR, FALSE, Logic 0
+              3.3 V → ON, HIGH, SET, TRUE, Logic 1
+              Unlike digital outputs, digital inputs do not drive a voltage. Instead, they sense the voltage applied to the pin by external circuitry.
+              Practical Motivation: PIR Motion Sensors
+              A common real-world example of a digital input device is a PIR (Passive Infrared) sensor. https://www.theengineeringprojects.com/2017/08/pir-sensor-arduino-interfacing.html
+              PIR sensors detect motion from objects that emit infrared radiation, such as humans or animals.The output of a PIR sensor is typically:
+              LOW (0 V) when no motion is detected
+              HIGH (3.3 V or 5 V) when motion is detected
+              This type of output is a digital signal, making it ideal for direct connection to a microcontroller’s digital input pin. Using such inputs, a system can automatically 
+              control lighting, air conditioning, alarms, or access control mechanisms.
+          </p>
+
+            <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+              Digital Input Pins on the DarkLight
+              The DarkLight board provides 49 general-purpose digital I/O pins, all of which can be configured as either inputs or outputs.https://drive.google.com/file/d/1iDOCyqj7ZmZXPVoG3HLKuUnemb4bCKe_/view?usp=drive_link 
+              The same electrical and terminology conventions apply to both.To read digital signals from switches or sensors, we configure selected pins as digital inputs using the DigitalIn class.
+              
+              The DarkLight software library provides the DigitalIn class to simplify digital input configuration and usage.   
+              
+              Function Name	        Purpose
+              DigitalIn()	          Configures a specified pin as a digital input
+              mode()	              Configures the internal pin mode:Pull-up or Pull-down
+              read()	              Reads the current logical state of the pin:Returns 0 for LOW and 1 for HIGH
+
+              Digital input pins must never be left floating. A floating pin can randomly read HIGH or LOW due to electrical noise.
+              To ensure a stable default state, a resistor is used:
+              Pull-down resistor → forces the pin to 0 V when the switch is open.
+              Pull-up resistor → forces the pin to 3.3 V when the switch is open. 
+              https://www.circuitbread.com/ee-faq/why-are-pull-up-and-pull-down-resistors-used
+
+
+              
+          </p>
+
+            <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+          </p>
+
+            <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+          </p>
+
+            <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+          </p>
+
+            <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+          </p>
+
+            <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+          </p>
+
+            <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+          </p>
+
+            <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+          </p>
+
+            <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+          </p>
+
+            <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+          </p>
           <div className="space-y-20">
             {DOC_DATA.map((doc) => (
               <section key={doc.id} id={doc.id} className="scroll-mt-24">
