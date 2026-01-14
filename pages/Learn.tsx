@@ -100,8 +100,8 @@ export const Learn: React.FC = () => {
                 •	J1, J2, J3, J4
                 •	J5, J6, J7
                 •	Debug header
-                 https://drive.google.com/file/d/1iDOCyqj7ZmZXPVoG3HLKuUnemb4bCKe_/view?usp=drive_link
-                All pins labeled in violet colour on these headers can be configured as digital output pins except:
+                https://drive.google.com/file/d/1qFN3aTKLaIjXNAYBg9TVFGIWkcxdrOVe/view?usp=drive_link
+                 All pins labeled in violet colour on these headers can be configured as digital output pins except:
                 •	PTA13
                 •	PTA14
                 These two pins are reserved for debugging and should not be repurposed for general I/O.
@@ -253,7 +253,7 @@ export const Learn: React.FC = () => {
 
             <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
               Digital Input Pins on the DarkLight
-              The DarkLight board provides 49 general-purpose digital I/O pins, all of which can be configured as either inputs or outputs.https://drive.google.com/file/d/1iDOCyqj7ZmZXPVoG3HLKuUnemb4bCKe_/view?usp=drive_link 
+              The DarkLight board provides 49 general-purpose digital I/O pins, all of which can be configured as either inputs or outputs.https://drive.google.com/file/d/1qFN3aTKLaIjXNAYBg9TVFGIWkcxdrOVe/view?usp=drive_link
               The same electrical and terminology conventions apply to both.To read digital signals from switches or sensors, we configure selected pins as digital inputs using the DigitalIn class.
               
               The DarkLight software library provides the DigitalIn class to simplify digital input configuration and usage.   
@@ -269,17 +269,98 @@ export const Learn: React.FC = () => {
               Pull-up resistor → forces the pin to 3.3 V when the switch is open. 
               https://www.circuitbread.com/ee-faq/why-are-pull-up-and-pull-down-resistors-used
 
+              Example Program 
+              Push-Button Switch SW on the DarkLight Development Board as an Input to control the onboard leds. 
+              https://drive.google.com/file/d/1qFN3aTKLaIjXNAYBg9TVFGIWkcxdrOVe/view?usp=drive_link 
+              
+              Circuit Description
+              The SW Push_Button switch is connected on the board to pin PTC8 and has a 10k Ohm external pull down resistor on it, as a result
+              it is not strictly necessary to configure enable the internal pulldown resistor in the microcontroller. However for the sake of completeness in this
+              tuitorial, we will still call the mode function to configure the pin in pull-down mode.
+              
+              The on_BOARDLED1 and on_BOARDLED2 are internally connected to pins  PTA8 and PTB8 and we will configure them pin as digital output pins.   
+              
+              Application Objective
+              We will implement the following behavior:
+              When the switch is pressed :
+              The on-BoardLED1 blinks once per second
+              When the switch is released:
+              The on-boardLED2 blinks once per second
+              This behavior is implemented using conditional (if–else) logic.
 
+              #include "DarkLight.h"
+                            
+              DigitalOut LED1(PTA8);
+              DigitalOut LED2(PTB8);
+              DigitalIn  switchInput(PTC8);
+                            
+              int main()
+              {
+                  switchInput.mode(PullDown);              
+
+                    while (true)
+                    {
+                        if (switchInput.read() == 1)
+                        {
+                            LED1.write(1);
+                            LED2.write(0);
+                            wait_ms(500);
+                            LED1.write(0);
+                            wait_ms(500);
+                        }
+                        else
+                        {
+                            LED2.write(1);
+                            LED1.write(0);
+                            wait_ms(500);
+                            LED2.write(0);
+                            wait_ms(500);
+                        }
+                    }
+              }
               
           </p>
 
             <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+              
+            How the Program Works
+            
+            The input pin  is continuously read inside the loop.
+            If the input is HIGH:
+            The on-board LED1 blinks.
+            If the input is LOW:
+            The on-board LED2 blinks.
+            The program runs indefinitely while the board is powered.
+          </p>
+          
+          <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+
+              Compiling and Debugging
+              Build the project in SEGGER Embedded Studio.
+              Connect the external debugger via USB.
+              Select Target → Connect J-Link.
+              Start execution by clicking Run.
+              Observing the Result
+              
+              With the switch released, observe the on-board LED1 blinking once per second.
+              Press and hold the push button.
+              Observe the on-board LED2 blinking at the same rate.
+              This confirms correct digital input detection and conditional logic execution.
+
           </p>
 
             <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
-          </p>
-
-            <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
+            Summary
+            
+            In this tutorial, you learned:
+            What digital inputs are and how they differ from outputs
+            How logic levels map to voltage levels on DarkLight
+            The purpose of pull-down resistors
+            How to use the DigitalIn class
+            How to combine digital inputs with digital outputs in a real application
+            
+            Digital inputs are essential for sensing user actions and environmental events. Combined with digital outputs, they form the foundation of interactive embedded systems.
+              
           </p>
 
             <p className="text-xl text-gray-400 mb-12 border-b border-gray-800 pb-8">
