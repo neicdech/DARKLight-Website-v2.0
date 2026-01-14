@@ -359,7 +359,8 @@ export const Learn: React.FC = () => {
             How to use the DigitalIn class
             How to combine digital inputs with digital outputs in a real application
             
-            Digital inputs are essential for sensing user actions and environmental events. Combined with digital outputs, they form the foundation of interactive embedded systems.
+            Digital inputs are essential for sensing user actions and environmental events. Combined with digital outputs, they form the foundation of interactive embedded systems. Watch the video tuitorial to learn more
+             https://drive.google.com/file/d/1F-ju0MVkZBotaWD9n7mZWWHlCiKo5nDn/view?usp=drive_link 
               
           </p>
 
